@@ -1,0 +1,41 @@
+.Header {
+    background: #2D3552;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 30px;
+}
+body {
+    margin: 0px;
+    background-color: #121212;
+    color: white;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.Content{
+    color: white;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+}
+
+button{
+    margin-top: 40px;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_page.css') }}">
+    <title>Crypto Helpers</title>
+</head>
+<body>
+    <div class="Header">
+        <h3>Crypto Helpers!</h3>
+    </div>
+    <div class="Content">
+        <h1>Welcome to the Crypto Helpers</h1>
+        <h3>Take our survey to know which encryption scheme YOU should use </h4>
+        <button><a href = "{{ url_for('page1') }}"> Take Survey</a></button>
+    </div>
+</body>
+</html>

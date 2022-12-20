@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+    {% block Question1 %}
+        <h3> What type of homomorphic scheme would you like?*</h3>
+        <select name="ques1">
+            <option value = "RSA">RSA</option>
+            <option value="DDH">DDH</option>
+            <option value="Quadratic residuosity">Quadratic residuosity</option>
+            <option value="Factoring">Factoring</option>
+            <option value="N residuosity">N residuosity</option>
+            <option value="Ideal Lattice Problems">Ideal Lattice Problems</option>
+            <option value="Approximate GCD">Approximate GCD</option>
+            <option value="Ring Learning with Error">Ring Learning with Error</option>
+            <option value="Learning with Error">Learning with Error</option>
+            <option value="" selected></option>
+        </select>
+    {% endblock %}
+    {% block Question2 %}
+        <h3> Problem hardness would you like your scheme to be based on?*</h3>
+        <select name="ques2">
+            <option value="FHE">Fully homomorphic</option>
+            <option value="PHE">Partially homomorphic</option>
+            <option value="" selected></option>
+        </select>
+    {% endblock %}
+    {% block Question3 %}
+        <h3> Rank the following critera according to their priority for your encyryption Scheme </h3>
+        <div class="option">
+            <select name="Security">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+            </select>
+            <p>Security</p>
+        </div>
+        <div class="option">
+            <select name="Speed">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+            </select>
+            <p>Speed</p>
+        </div>
+        <div class="option">
+            <select name="Implementation">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+            </select>
+            <p>Ease of implementation/access</p>
+        </div>
+        <p>* = optional</p>
+        <button><input type="submit" value="submit" /></button>
+    {% endblock %}

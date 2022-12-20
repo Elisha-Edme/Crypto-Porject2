@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% block Question1 %}
+        <h3> What types of attacks would you like your scheme to be effective against (rank them)? </h3>
+        <h4> Highest priority attack = 8 and Lowest priority attack = 1</h4>
+        <div class="option">
+            <select name="brute">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+            </select>
+            <p>Brute force attack</p>
+        </div>
+        <div class="option">
+            <select name="rainbow table">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+            </select>
+            <p>Rainbow Table attack</p>
+        </div>
+        <div class="option">
+            <select name="dictionary">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+            </select>
+            <p>Dictionary attack</p>
+        </div>
+        <div class="option">
+            <select name="key leakage">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+            </select>
+            <p>Key leakage</p>
+        </div>
+        <div class="option">
+            <select name="timing">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+            </select>
+            <p>Timing attack</p>
+        </div>
+        <div class="option">
+            <select name="replay">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+            </select>
+            <p>Replay attack</p>
+        </div>
+        <div class="option">
+            <select name="quantum">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+            </select>
+            <p>Quantum Computing attack</p>
+        </div>
+        <div class="option">
+            <select name="key recovery">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+            </select>
+            <p>Key Recovery attack</p>
+        </div>
+    {% endblock %}
+    {% block Question2 %}
+        <h3> What type of application would you like to implement this on?* (Select all that apply) </h3>
+        <input type="checkbox" name="opt1" value="encrypted math">
+        <label for="encrypted math">Voting/mathematical computation</label><br>
+        <input type="checkbox" name="opt2" value="Transaction">
+        <label for="Transaction">Transaction service</label><br>
+        <input type="checkbox" name="opt3" value="Cloud">
+        <label for="Cloud">Cloud storage</label><br>
+        <input type="checkbox" name="opt4" value="Platform">
+        <label for="Platform">Platform streaming</label><br>
+    {% endblock %}
+    {% block Question3 %}
+    <h3> What type of homomorphism would you like the encryption scheme to have?* </h3>
+    <select name="ques6">
+        <option value="Product">Product</option>
+        <option value="Xor">Xor</option>
+        <option value="Sum">Sum</option>
+        <option value="Arithmetic (+,*) Circuits">Arithmetic (+,*) Circuits</option>
+        <option value="Boolean (AND/XOR) Circuits">Boolean (AND/XOR) Circuits</option>
+        <option value="" selected></option>
+    </select>
+    <br>
+    <p>* = optional</p>
+        <button><input type="submit" value="submit" /></button>
+    {% endblock %}
