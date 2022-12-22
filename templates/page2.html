@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block Question1 %}
-        <h3> What types of attacks would you like your scheme to be effective against (rank them)? </h3>
+        <h3> What types of attacks would you like your scheme to be effective against (rank them)?* </h3>
         <h4> Highest priority attack = 8 and Lowest priority attack = 1</h4>
         <div class="option">
             <select name="brute">
@@ -108,7 +108,7 @@
         </div>
     {% endblock %}
     {% block Question2 %}
-        <h3> What type of application would you like to implement this on?* (Select all that apply) </h3>
+        <h3> What type of application would you like to implement this on? (Select all that apply) </h3>
         <input type="checkbox" name="opt1" value="encrypted math">
         <label for="encrypted math">Voting/mathematical computation</label><br>
         <input type="checkbox" name="opt2" value="Transaction">
@@ -119,7 +119,7 @@
         <label for="Platform">Platform streaming</label><br>
     {% endblock %}
     {% block Question3 %}
-    <h3> What type of homomorphism would you like the encryption scheme to have?* </h3>
+    <h3> What type of homomorphism would you like the encryption scheme to have? </h3>
     <select name="ques6">
         <option value="Product">Product</option>
         <option value="Xor">Xor</option>
@@ -129,6 +129,6 @@
         <option value="" selected></option>
     </select>
     <br>
-    <p>* = optional</p>
+    <p>* = required</p>
         <button><input type="submit" value="submit" /></button>
     {% endblock %}
